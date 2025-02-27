@@ -17,7 +17,7 @@
  * The expand function is designed to find the longest palindrome centered at the given indices $left and $right.
  * Using this approach we can be more performatic and could be applied for more big entries.
  * 
- * Big O: 
+ * Big O: O(n2)
  */
 function searchCenteredPalindrome($s, $left, $right) {
     while ($left >= 0 && $right < strlen($s) && $s[$left] === $s[$right]) {
